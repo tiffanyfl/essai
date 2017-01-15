@@ -1,0 +1,512 @@
+/* ---------- GENERALITES ---------- */
+
+/* FONT : 
+
+    font-family: 'Muli', sans-serif;
+
+    font-family: 'Bungee Hairline', cursive;
+
+    font-family: 'Trochut', cursive;
+
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: auto;
+    font-family: 'Muli', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bouton {
+    background-color: #d6768f;
+    padding : 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Bungee Hairline', cursive;
+    border: 1px solid #bedec0;
+}
+
+.bouton:hover {
+    background-color: #bedec0;
+    border : 1px solid #e3a716;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Trochut', cursive;
+    color : #e3a716;
+    margin: auto;
+    text-align: center;
+}
+
+/* ---------- PAGE D'ACCUEIL ---------- */
+#background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Cloud-PNG-image.png),
+    linear-gradient( 
+      #f7f7e7, #de7487 
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+.haut{
+    margin-left: 90%;
+    margin-top : 0.2%;
+}
+
+.logo {
+    width: 10%;
+    margin: 30vh auto auto 45%;
+}
+
+
+.tiffany {
+    font-size: 3rem;
+    font-family: 'Trochut', cursive;
+    color : #e3a716;
+}
+
+.tiffany:hover{
+    color : #bedec0;
+}
+
+.point {
+    font-size: 3rem;
+    color: #d6768f;
+    display: inline-block;
+}
+
+.slogan {
+    font-size: 1.75rem;
+    font-family: 'Bungee Hairline', cursive;
+    color : #4a5b5b/*#d7dce0*/;
+    font-weight: 800;
+} 
+
+.container-pa{
+    width: 100%;
+}
+
+.container-pa div {
+    text-align: center;
+}
+
+/* MEDIA QUERIES (480) */
+
+@media screen and (max-width : 480px){
+    .logo {
+        width: 15%;
+    }
+    
+    .tiffany {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1rem;
+    }
+    
+    .container-pa a {
+        padding : 5px;
+        display: block;
+    }
+
+} 
+
+
+/* ----------DEUXIEME PARTIE : INTRODUCTION---------- */
+#introduction {
+    margin: 0 auto;
+    min-height: 60%;
+    /*background-color: #f7f7e7;*/
+    background-image: url(img/Tiffany-83-Panorama-Modifier-2%20s.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-intro {
+    width: 30%;
+    margin-left: 22.5%;
+    background-color: #f7f7e7;
+    padding: 2.5%;
+}
+
+.container-bouton {
+    width: 30%;
+    margin-left: 22.5%;
+    text-align: center;
+    padding: 1.5%;
+}
+
+/* MEDIA QUERIES (760, 480) */
+
+@media screen and (max-width : 760px){
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container-intro {
+        margin-left: 15%;
+        width: 45%;
+    }
+} 
+
+
+@media screen and (max-width : 480px){
+    a {
+        font-size: 0.75rem;
+    }
+    
+    .container-intro, .container-bouton {
+        margin-left: 5%;
+        width: 55%;
+    }
+    
+} 
+
+
+/* ---------- TROISIEME PARTIE : COMPETENCES---------- */
+#competences {
+    margin: 0 auto;
+    min-height: 30%;
+    background-color: #bedec0;
+}
+
+.container-comp {
+    width: 55%;
+    margin-left: 22.5%;
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.boite-comp {
+    width: 49%;
+    display: inline-block;
+}
+
+.boite-comp img {
+    width: 15%;
+}
+
+.boite-comp p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* MEDIA QUERIES (760)*/
+@media screen and (max-width : 760px){
+    .boite-comp {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    
+} 
+
+/* ----------QUATRIEME PARTIE : PORTFOLIO---------- */
+
+#portfolio {
+    margin: 0 auto;
+    min-height: 100%;
+    /*background-color: #f7f7e7;*/
+    background-image: url(img/Cloud-PNG-image.png),
+    linear-gradient( 
+      #f7f7e7, #de7487 
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* TRI */
+
+nav {
+    margin-top: 1%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    padding-right: 30px;
+    font-family: 'Bungee Hairline', cursive;
+    color : #4a5b5b/*#d7dce0*/;
+    font-weight: 700; 
+    font-size: 1.25rem;
+}
+
+nav li a {
+   color : #d6768f;
+}
+
+/* BOITES IMAGES */
+
+.container-port {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boite {
+    width: 33%;
+    margin-bottom: 2vh;
+    position: relative;
+}
+
+
+.boite img {
+    width: 100%;
+    position: relative;
+    opacity: 0.9;
+}
+
+.boite img:hover {
+    opacity : 0.6;
+}
+
+.boite .description {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.description h2 {
+    /*font-family: 'Muli', sans-serif;*/
+    font-family: 'Trochut', cursive;
+    font-size: 2rem;
+    color: #e3a716;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* POPUP */
+
+ .overlay {
+    z-index: 99;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 100%;
+    width : 100%;
+    background-color: #d6768f;
+    opacity : 0.5;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*.contenu-popup {
+    position: fixed;
+    overflow-x: auto;
+}*/
+
+.popup {
+    background-color: #f7f7e7;
+    width: 60%;
+    min-height: 80vh;
+    position: fixed;
+    top: 8vh;
+    left : 20%;
+    z-index: 999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: thin solid #bedec0;
+    padding: 1rem;
+    display: none;
+    font-family: 'Muli', sans-serif;
+    color: #4a5b5b;
+    overflow-y: visible;
+}
+
+.popup .popup-title { 
+    font-size: 2em;
+    text-align: center;
+}
+
+.container-popup {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.popup .popup-desc{
+    font-size: 0.65rem;
+}
+
+.popup .popup-text {
+    text-align: justify;
+}
+
+.container-popup a {
+    margin-left: 17vw;
+}
+
+.popup .popup-close {
+    color: #d6768f;
+    text-decoration: none;
+    font-size: 1.6em;
+    position: absolute;
+    top: 0.1em;
+    right: 0.1em;
+    line-height: 1em;
+}
+
+.popup img {
+    width: 50%;
+    margin-left: 14vw;
+}
+
+/* MEDIA QUERIES (480, 580, 760) */
+
+@media screen and (max-width : 760px){
+    .container-popup a {
+        margin-left: 12vw;
+    }
+}
+
+@media screen and (max-width : 580px){
+
+    .container-port{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .boite {
+        width: 48%;
+    }
+    .popup .popup-text{
+        font-size: 0.95rem;
+    }
+    
+    .popup img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .container-popup a {
+        margin-left: 6vw;
+    }
+} 
+
+@media screen and (max-width : 480px){
+    
+    .boite {
+        width: 100%;
+    }
+
+    nav li {
+    font-size: 1rem;
+    }
+} 
+
+/* ----------CINQUIEME PARTIE : FORMULAIRE CONTACT---------- */
+#contact {
+    margin: 0 auto;
+    height: 70%;
+    background-color: #f7f7e7;
+}
+
+#contact h1 {
+    padding-bottom: 5%;
+}
+/* ----------FOOTER---------- */
+
+#footer{
+    margin: 0 auto;
+    height: 30%;
+    background-color: #d6768f;
+}
+
+.icon {
+    margin-left: 42.5%;
+    display: flex;
+    flex-direction: row;
+    padding-top : 5%;
+}
+
+/* FONT-FACE : POLICE D'ICONE */
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("my-icons-collection/font/Flaticon.eot");
+    src: url("my-icons-collection/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("my-icons-collection/font/Flaticon.woff") format("woff"),
+       url("my-icons-collection/font/Flaticon.ttf") format("truetype"),
+       url("my-icons-collection/font/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("my-icons-collection/font/Flaticon.svg#Flaticon") format("svg");
+      }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+        font-family: Flaticon;
+        font-size: 40px;
+        font-style: normal;
+        margin-left: 20px;
+        display: inline-block;
+}
+
+.flaticon-instagram:before { content: "\f100"; }
+.flaticon-linkedin:before { content: "\f101"; }
+.flaticon-pinterest:before { content: "\f102"; }
+.flaticon-twitter:before { content: "\f103"; }
+
+#footer p {
+    text-align: center;
+    padding-top: 3%;
+    color: #f7f7e7;
+}
+
+.icon a {
+    color: #f7f7e7;
+}
+
+
+/* MEDIA QUERIES () */
+
+@media screen and (max-width : 760px){
+    .icon {
+        margin-left: 35%;
+    }
+    
+}
+
+@media screen and (max-width : 480px){
+    .icon {
+        margin-left: 25%;
+    }
+
+} 
